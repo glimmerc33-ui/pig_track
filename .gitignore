@@ -1,0 +1,34 @@
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+.env
+venv/
+.venv/
+env/
+
+# data / outputs
+data/
+datasets/
+logs/
+runs/
+checkpoints/
+output/
+
+# large artifacts
+*.avi
+*.mp4
+*.mov
+*.mkv
+
+# model weights
+*.pt
+*.pth
+*.ckpt
+*.onnx
+*.tar
+*.tar.gz
+
+# your training outputs folder
+reid_runs/

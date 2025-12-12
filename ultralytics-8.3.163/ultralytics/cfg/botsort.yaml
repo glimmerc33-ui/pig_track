@@ -1,0 +1,26 @@
+# --- 基础 ---
+tracker_type: botsort
+gmc_method: sparseOptFlow
+
+# --- 阈值 ---
+track_high_thresh: 0.55
+track_low_thresh: 0.1
+new_track_thresh: 0.35
+match_thresh: 0.8
+track_buffer: 30
+
+# --- IoU/外观融合（先不开外部ReID）---
+proximity_thresh: 0.5
+appearance_thresh: 0.25
+fuse_score: True
+
+# --- ReID 开关（先走“auto”，不依赖外部模型，确保不报错）---
+with_reid: True
+model: auto
+
+center_gate: 0.20
+cost_alpha: 0.5
+det_nms_iou: 0.6
+reid_merge_tau: 0.25
+strict_frames: 10
+strict_bonus: 0.10
