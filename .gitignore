@@ -1,34 +1,24 @@
+# ===== Data / Results =====
+frames/
+track_final/
+scene_final/
+comparison/
+no_obb/
+no_reid/
+no_relink/
+only_botsort/
+only_bytetracker/
+
+# ===== Figures =====
+*.png
+*.jpg
+*.jpeg
+*.pdf
+
+# ===== Cache / Temp =====
 __pycache__/
 *.pyc
-*.pyo
-*.pyd
 
-.env
-venv/
-.venv/
-env/
-
-# data / outputs
-data/
-datasets/
-logs/
-runs/
-checkpoints/
-output/
-
-# large artifacts
-*.avi
-*.mp4
-*.mov
-*.mkv
-
-# model weights
+# ===== Large external libs (optional) =====
 *.pt
-*.pth
-*.ckpt
 *.onnx
-*.tar
-*.tar.gz
-
-# your training outputs folder
-reid_runs/
